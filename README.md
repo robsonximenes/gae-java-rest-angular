@@ -11,17 +11,18 @@ Just clone de projetc and use maven to run the app.
     - Register
     - Login
     - User
-  - Security Filter
-  - Angular APP
+  - Security Filter (Basic Authentication per request)
+  - Angular APP ( no CSS, just a simple app)
     - Consume REST services
     - Implements security
+    - Dependences managed by bower (just run "bower install" at webapp dir)
+  - Persistence at google data store with Objectfy 
 
 ## Running
 
 ```sh
 mvn appengine:devserver
 ```
-
 
 ## DEPLOY
 
