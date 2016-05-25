@@ -11,12 +11,13 @@ Just clone de projetc and use maven to run the app.
     - Register
     - Login
     - User
-  - Security Filter (Basic Authentication per request)
-  - Angular APP ( no CSS, just a simple app)
-    - Consume REST services
-    - Implements security
-    - Dependences managed by bower (just run "bower install" at webapp dir)
   - Persistence at google data store with Objectfy 
+  - Security Filter (Basic Authentication per request)
+  - Angular client APP ( no CSS, just a simple app)
+    - Consumes REST services
+    - Implements security
+    - Dependencys managed by bower (just run "bower install" at webapp dir)
+  
 
 ## Running local
 
@@ -33,4 +34,4 @@ The file WEB-INF/appengine.xml uses de app.version parameter from pom.xml to dep
 mvn appengine:update
 ```
 
-Your app should be accessible at http://<version>.<project-id>.appspot.com
+Your app should be accessible at http://version.project-id.appspot.com
