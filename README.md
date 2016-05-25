@@ -18,16 +18,19 @@ Just clone de projetc and use maven to run the app.
     - Dependences managed by bower (just run "bower install" at webapp dir)
   - Persistence at google data store with Objectfy 
 
-## Running
+## Running local
 
 ```sh
 mvn appengine:devserver
 ```
+Your app should be accessible at http://localhost:8080 or 8888
 
-## DEPLOY
+## DEPLOY to cloud
 
 The file WEB-INF/appengine.xml uses de app.version parameter from pom.xml to deploy at google.
 
 ```sh
 mvn appengine:update
 ```
+
+Your app should be accessible at http://<version>.<project-id>.appspot.com
