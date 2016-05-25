@@ -1,20 +1,32 @@
-appengine-skeleton
-=============================
+# appengine + java + rest + angular sample
+
+This projetc helps to create a simple app ready to run on Google Appengine. 
+
+Just clone de projetc and use maven to run the app.
 
 
-Novo projeto: EpdemicBonus
+## Features
 
-Gerando um novo projeto
-	mvn archetype:generate -Dappengine-version=1.9.37 -Dapplication-id=your-app-id -Dfilter=com.google.appengine.archetypes:
-	mvn clean install
+  - REST with Jersey
+    - Register
+    - Login
+    - User
+  - Security Filter
+  - Angular APP
+    - Consume REST services
+    - Implements security
 
-Rodar local:  http://localhost:8080/
-	mvn appengine:devserver
+## Running
+
+```sh
+mvn appengine:devserver
+```
 
 
-DEPLOY
+## DEPLOY
 
+The file WEB-INF/appengine.xml uses de app.version parameter from pom.xml to deploy at google.
+
+```sh
 mvn appengine:update
-
-
-	
+```
